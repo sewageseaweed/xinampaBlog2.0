@@ -2,7 +2,7 @@ import React from "react";
 
 import { Switch, Route } from "react-router-dom";
 
-import Nav from "../../components/Nav";
+import AppNavBar from "../../components/Nav";
 import Articles from "../Articles";
 import Article from "../Article";
 import Category from "../Category";
@@ -12,7 +12,7 @@ import "./index.css"
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <AppNavBar />
       <div className="body">
       <Switch >
         <Route path="/" component={Articles} exact />
